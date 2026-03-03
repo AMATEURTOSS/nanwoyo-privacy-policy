@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나눠요 회원탈퇴 안내</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background: #F9FAFB;
+      color: #111827;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* Header */
+    header {
+      background: #1A56DB;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    header .subtitle {
+      margin-top: 8px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    /* Notice box */
+    .notice {
+      background: #FEF3C7;
+      border: 1px solid #FCD34D;
+      border-left: 4px solid #F59E0B;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      color: #92400E;
+    }
+
+    /* Step card */
+    .step {
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #EFF6FF;
+    }
+
+    .step-badge {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: #1A56DB;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .step-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1A56DB;
+    }
+
+    .step-desc {
+      color: #374151;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    /* Screenshot container */
+    .screenshot-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .screenshot-wrap picture,
+    .screenshot-wrap img {
+      display: block;
+      max-width: 320px;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 13px;
+      color: #9CA3AF;
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 21px; }
+      .step { padding: 20px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>나눠요 회원탈퇴 안내</h1>
+  <p class="subtitle">아래 단계에 따라 탈퇴를 진행해 주세요</p>
+</header>
+
+<div class="container">
+
+  <p class="notice">
+    ⚠️ 회원탈퇴 시 모든 데이터(닉네임, 프로필 사진, 기프티콘 정보 등)가 즉시 삭제되며 복구할 수 없습니다.
+  </p>
+
+  <!-- Step 1 -->
+  <div class="step">
+    <div class="step-header">
+      <div class="step-badge">1</div>
+      <span class="step-title">프로필 수정 화면으로 이동</span>
+    </div>
+    <p class="step-desc">
+      홈 화면 오른쪽 상단의 <strong>프로필 아이콘</strong>을 탭하여 프로필 수정 화면을 엽니다.
+    </p>
+    <div class="screenshot-wrap">
+      <picture>
+        <source srcset="images/withdraw-manual/step1.webp" type="image/webp" />
+        <img src="images/withdraw-manual/step1.png" alt="홈 화면에서 프로필 아이콘 탭하기" />
+      </picture>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step">
+    <div class="step-header">
+      <div class="step-badge">2</div>
+      <span class="step-title">회원 탈퇴 버튼 탭</span>
+    </div>
+    <p class="step-desc">
+      프로필 수정 화면 하단의 <strong>회원 탈퇴</strong> 버튼을 탭하면 탈퇴가 진행됩니다.
+    </p>
+    <div class="screenshot-wrap">
+      <picture>
+        <source srcset="images/withdraw-manual/step2.webp" type="image/webp" />
+        <img src="images/withdraw-manual/step2.png" alt="프로필 수정 화면에서 회원 탈퇴 버튼 탭하기" />
+      </picture>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>나눠요 &copy; 2026 최영진 &nbsp;|&nbsp; <a href="mailto:amateur.toss@gmail.com" style="color:#9CA3AF;">amateur.toss@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
